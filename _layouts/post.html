@@ -5,7 +5,7 @@
     {% include head.html %}
     <body>
       <header class="header">
-        <a class="logo" href="http://www.kuojohn.com">
+        <a class="logo" href="https://jlku.github.io/jk_portfolio/">
               🦁
         </a>
         <nav class="header-nav">
@@ -16,7 +16,7 @@
         {% if page.heroMedia contains ".mp4" %}
             <video id="post-hero" src="{{ page.heroMedia }}" autoplay="true" loop="true"></video>
         {% else %}
-            <img id="post-hero" src="{{ page.heroMedia }}" />
+            <img id="post-hero" src="{{ site.baseurl }}{{ page.heroMedia }}" />
         {% endif %}
         <div class="wrapper-post">
             <section class="story">
