@@ -1,0 +1,37 @@
+.logo {
+  font-size: 2rem;
+}
+
+.header {
+  height: $headerFooterHeight;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 23%;
+  z-index: 1;
+  background-color: $siteBackground;
+  @media (max-width: $breakpointLarge) {
+     padding: 0 16%;
+  }
+
+  @media (max-width: $breakpointMedium) {
+     padding: 0 12.5%;
+  }
+
+  @media (max-width: $breakpointSmall) {
+     padding: 0 8%;
+  }
+}
+
+.header-nav {
+   display: block;
+
+   > a {
+      color: $white;
+      margin-right: .5em;
+      font: $cta;
+   }
+}
